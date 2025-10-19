@@ -4,6 +4,7 @@ Collection of Python scripts for working with OpenAI APIs:
 - **Chat completion** - Simple GPT chat interface
 - **Fine-tuning** - Create and manage custom fine-tuned models
 - **Text-to-Speech** - Convert text to natural-sounding audio
+- **Embeddings** - Generate vector representations for semantic search
 
 ## Setup
 
@@ -70,6 +71,25 @@ python text_to_speech.py "Test message" test.mp3 shimmer
 
 # Use HD quality
 python text_to_speech.py "High quality" audio.mp3 nova tts-1-hd
+```
+
+### Embeddings (Semantic Search)
+
+For detailed embeddings guide, see [EMBEDDINGS_README.md](EMBEDDINGS_README.md)
+
+Quick start:
+```bash
+# Generate embedding for text
+python text_embeddings.py "Machine learning is fascinating"
+
+# Compare similarity between two texts
+python text_embeddings.py --compare "Python programming" "Coding in Python"
+
+# Batch process multiple texts
+python batch_embeddings.py sample_texts.txt
+
+# Search through texts semantically
+python semantic_search.py embeddings.json "artificial intelligence" 5
 ```
 
 ## Troubleshooting
