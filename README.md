@@ -3,6 +3,7 @@
 Collection of Python scripts for working with OpenAI APIs:
 - **Chat completion** - Simple GPT chat interface
 - **Fine-tuning** - Create and manage custom fine-tuned models
+- **Text-to-Speech** - Convert text to natural-sounding audio
 
 ## Setup
 
@@ -50,6 +51,25 @@ python check_fine_tune_status.py <job_id>
 
 # 4. Use your fine-tuned model
 python use_fine_tuned_model.py <model_name> "Your question"
+```
+
+### Text-to-Speech
+
+For detailed TTS instructions, see [TTS_README.md](TTS_README.md)
+
+Quick start:
+```bash
+# Convert text to speech
+python text_to_speech.py "Hello, world!"
+
+# Convert from file with specific voice
+python text_to_speech_file.py sample_text.txt output.mp3 nova
+
+# Try different voices: alloy, echo, fable, onyx, nova, shimmer
+python text_to_speech.py "Test message" test.mp3 shimmer
+
+# Use HD quality
+python text_to_speech.py "High quality" audio.mp3 nova tts-1-hd
 ```
 
 ## Troubleshooting

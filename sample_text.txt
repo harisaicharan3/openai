@@ -1,0 +1,10 @@
+Welcome to OpenAI's Text-to-Speech demo.
+
+This is a sample text file that demonstrates how to convert written text into natural-sounding speech using OpenAI's TTS API.
+
+The API supports multiple voices and can handle various types of content, from short messages to longer articles. You can choose different voices to match your needs, whether you want a neutral, male, or female voice.
+
+Text-to-speech technology has many practical applications, including accessibility features, audiobook creation, virtual assistants, and language learning tools.
+
+This sample demonstrates the basic functionality. Feel free to replace this text with your own content!
+
